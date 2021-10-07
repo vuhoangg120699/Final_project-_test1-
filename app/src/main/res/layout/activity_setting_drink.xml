@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#673AB7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+  <androidx.appcompat.widget.Toolbar
+      style="@style/ThemeOverlay.AppCompat.Dark"
+      android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      android:background="@color/cardview_shadow_end_color"
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"/>
+    <GridView
+        android:verticalSpacing="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

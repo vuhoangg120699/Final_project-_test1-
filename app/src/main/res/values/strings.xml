@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">QuanLySucKhoe</string>
+    <string name="menu1">Trang Chủ</string>
+    <string name="menu2">Nhắc Nhở Uống Nước</string>
+    <string name="menu3">Tiện ích</string>
+    <string name="dangky"><u>Bạn chưa có tài khoản ? Đăng Ký</u></string>
+    <string name="Open">Open</string>
+    <string name="Close">Close</string>
+</resources>

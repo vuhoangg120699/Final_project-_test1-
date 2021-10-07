@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#CFCFD8"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView android:layout_width="42dp" android:layout_height="42dp"
+    android:src="@drawable/back"
+               android:layout_marginTop="8dp"
+               android:layout_marginLeft="10dp"
+
+    android:id="@+id/back"/>
+      <de.hdodenhof.circleimageview.CircleImageView
+              android:layout_width="90dp"
+              android:layout_height="90dp"
+      android:id="@+id/profile"
+        android:layout_centerHorizontal="true"
+          android:layout_marginTop="120dp"
+
+        android:src="@drawable/users"
+      app:civ_border_color="@android:color/holo_red_dark"/>
+    <androidx.cardview.widget.CardView
+            android:layout_below="@+id/profile"
+      android:id="@+id/c1"
+        app:cardElevation="8dp"
+        app:cardCornerRadius="15dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:textColorHint="@android:color/background_dark"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:hint="Mật Khẩu"
+                app:passwordToggleEnabled="true"
+                android:background="@android:color/background_light"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:maxLength="16"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:shadowColor="@android:color/background_dark"
+                    android:textColor="@android:color/background_dark"
+                    android:id="@+id/editpass"
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:textColorHint="@android:color/background_dark"
+                android:layout_marginBottom="35dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_width="match_parent"
+                android:hint="Nhập Lại Mật Khẩu"
+                app:passwordToggleEnabled="true"
+                android:background="@android:color/background_light"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:maxLength="16"
+                    android:textSize="16sp"
+                    android:inputType="textPassword"
+                    android:shadowColor="@android:color/background_dark"
+                    android:textColor="@android:color/background_dark"
+                    android:id="@+id/editpass1"
+                    android:background="@android:color/background_light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <Button
+            android:layout_below="@+id/c1"
+            android:layout_marginTop="30dp"
+        android:background="@drawable/button_login"
+        android:id="@+id/btncapnhat"
+        android:shadowRadius="1"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:shadowColor="@android:color/holo_blue_dark"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:text="Cập Nhật"
+
+        android:layout_centerHorizontal="true"
+        android:layout_width="180dp"
+        android:layout_height="50dp"/>
+
+</RelativeLayout>

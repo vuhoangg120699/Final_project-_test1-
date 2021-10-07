@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group
+    android:checkableBehavior="single">
+    <item
+        android:title="Đồng Hồ CaLo"
+        android:icon="@drawable/watch"
+        android:id="@+id/watchcalo"
+        />
+    <item
+        android:title=" Nhắc Nhở Uống Nước"
+        android:icon="@drawable/water"
+        android:id="@+id/drinkwater"
+        />
+
+    <item
+            android:title="Tin Tức"
+            android:id="@+id/tintuc"
+            android:icon="@drawable/tintuc"/>
+    <item
+            android:title="Thông Tin Tài Khoản"
+            android:id="@+id/thongtin"
+            android:icon="@drawable/user"/>
+</group>
+</menu>

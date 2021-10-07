@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dinhvu.quanlysuckhoe">
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <application
+
+            android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.FragMent_TaiKhoan"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.ManagerTienIchActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.NewsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.ChangePassActivity"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.MenuActivity"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.InfoActivity"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.FragMent_ManagerWatch"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.FragMent_NuocUong"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.LichSuNuocUongActivity"
+        android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.SettingNuocUongActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.NoteDrinkActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.ThongTinCaloActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.ThongTinBMIActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.IndexCaloActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.IndexBodyActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.HomeActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.DangKyActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.View.DangNhapActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.dinhvu.quanlysuckhoe.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.dinhvu.quanlysuckhoe.Services.AlamServer"
+            android:exported="false"/>
+        <service android:name="com.dinhvu.quanlysuckhoe.Services.Notifications"
+            android:exported="false"
+            android:enabled="true"/>
+    </application>
+
+</manifest>

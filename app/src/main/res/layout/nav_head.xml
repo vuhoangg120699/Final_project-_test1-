@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="150dp">
+      <ImageView
+          android:scaleType="centerCrop"
+          android:src="@drawable/bg1"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"/>
+    <TextView
+        android:gravity="center"
+        android:shadowRadius="1"
+        android:shadowDx="-1"
+        android:shadowDy="-1"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:layout_centerInParent="true"
+        android:textSize="24sp"
+        android:shadowColor="@android:color/background_light"
+        android:textColor="@android:color/background_light"
+        android:text="Quản Lý Sức Khỏe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

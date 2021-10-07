@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout android:id="@+id/drawablelayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <RelativeLayout
+
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+      <androidx.cardview.widget.CardView
+              app:cardCornerRadius="5dp"
+              app:cardElevation="5dp"
+              android:layout_width="match_parent" android:layout_height="wrap_content">
+          <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+
+              <ImageView
+                  android:id="@+id/user"
+                  android:layout_width="32dp"
+                  android:layout_height="32dp"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginRight="5dp"
+                  android:layout_marginBottom="15dp"
+                  android:layout_toLeftOf="@id/txttenuser"
+
+                  android:src="@drawable/user" />
+
+              <TextView
+                  android:id="@+id/txttenuser"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+
+                  android:layout_alignParentRight="true"
+                  android:layout_marginTop="15dp"
+                  android:layout_marginRight="10dp"
+                  android:padding="5dp"
+                  android:shadowColor="#3F51B5"
+                  android:text=" Nhut Nguyen"
+                  android:textColor="#3F51B5"
+                  android:textSize="12sp" />
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginTop="60dp"
+
+                  android:layout_marginBottom="25dp"
+                  android:shadowColor="@android:color/background_dark"
+                  android:text="Bảng Điều Khiển"
+                  android:textColor="@android:color/background_dark"
+                  android:textSize="22sp" />
+          </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+       <GridLayout
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="150dp"
+           android:alignmentMode="alignMargins"
+
+           android:columnCount="2">
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/c1"
+               android:layout_width="180dp"
+               android:layout_height="220dp"
+               android:layout_marginLeft="10dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="5dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   android:orientation="vertical">
+
+                   <com.airbnb.lottie.LottieAnimationView
+                       android:layout_width="150dp"
+                       android:layout_height="160dp"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="7dp"
+                       android:layout_marginBottom="5dp"
+                       app:lottie_autoPlay="true"
+                       app:lottie_loop="true"
+                       app:lottie_rawRes="@raw/watch"
+                       app:lottie_speed="1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="8dp"
+
+                       android:padding="5dp"
+                       android:text="Đồng Hồ CaLo"
+                       android:textColor="#2196F3"
+                       android:textSize="18sp" />
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+           <androidx.cardview.widget.CardView
+               android:id="@+id/c2"
+               android:layout_width="180dp"
+               android:layout_height="220dp"
+               android:layout_marginLeft="10dp"
+               app:cardCornerRadius="10dp"
+               app:cardElevation="5dp">
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+
+                   android:orientation="vertical">
+
+                   <com.airbnb.lottie.LottieAnimationView
+                       android:layout_width="150dp"
+                       android:layout_height="160dp"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="7dp"
+                       android:layout_marginBottom="5dp"
+                       app:lottie_autoPlay="true"
+                       app:lottie_loop="true"
+                       app:lottie_rawRes="@raw/drinkwater"
+                       app:lottie_speed="1" />
+
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_gravity="center"
+                       android:layout_marginTop="8dp"
+
+                       android:padding="5dp"
+                       android:text="Uống Nước"
+                       android:textColor="#2196F3"
+                       android:textSize="18sp" />
+               </LinearLayout>
+
+           </androidx.cardview.widget.CardView>
+
+
+
+
+       </GridLayout>
+
+   </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
